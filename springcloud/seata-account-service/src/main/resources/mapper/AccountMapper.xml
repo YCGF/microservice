@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.zy.seata.account_service.dto.AccountDao">
+    <resultMap id="BaseResultMap" type="com.zy.seata.account_service.domain.Account">
+        <id column="id" property="id" jdbcType="int"></id>
+        <result column="user_id" property="userId" jdbcType="int"></result>
+        <result column="total" property="total" jdbcType="decimal"></result>
+        <result column="used" property="used" jdbcType="decimal"></result>
+        <result column="residue" property="residue" jdbcType="decimal"></result>
+    </resultMap>
+
+    <update id="decrease">
+        update t_account
+        set used = used + #{price}, residue = residue - #{price}
+        where user_id = #{userId}
+    </update>
+</mapper>
