@@ -13,9 +13,9 @@ spring:
         server-addr: 127.0.0.1:8848
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://118.190.210.226:3006/seata_order
-    username: root
-    password: Root1234
+    url: jdbc:mysql://127.0.0.1:3306/seata_order
+    username:
+    password:
 
 feign:
   hystrix:
