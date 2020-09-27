@@ -24,6 +24,9 @@ public class OrderController {
         return config;
     }
 
+    /**
+     * http://localhost:9100/api/v1/order/save?user_id=1&product_id=1
+     * */
     @RequestMapping("/save")
     public Object save(@RequestParam("user_id") int userId, @RequestParam("product_id") int productId){
         return orderService.save(userId, productId);
