@@ -25,3 +25,8 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/api/v1/product/find
+
+        - id: order_service
+          uri: lb://order-service
+          predicates:
+            - Path=/api/v1/order/**

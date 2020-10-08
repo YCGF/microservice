@@ -1,6 +1,5 @@
 package com.zy.service.product.model;
 
-
 public class Product {
 
     /**

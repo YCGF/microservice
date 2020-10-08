@@ -19,6 +19,9 @@ public class OrderController {
     @Value("${nacos.config}")
     private String config;
 
+    /**
+     * http://localhost:9100/api/v1/order/config
+     * */
     @RequestMapping("/config")
     public String config() {
         return config;
