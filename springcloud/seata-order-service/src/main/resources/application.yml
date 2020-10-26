@@ -12,10 +12,10 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/seata_order
-    username:
-    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhsot:3306/seata_order
+    username: root
+    password: root
 
 feign:
   hystrix:
@@ -28,4 +28,5 @@ logging:
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.zy.seata.order_service.domain
 

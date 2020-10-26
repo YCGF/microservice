@@ -12,8 +12,8 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://118.190.210.226:3006/seata_storage
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata_storage
     username: root
     password: Root1234
 

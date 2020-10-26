@@ -3,12 +3,12 @@
 
 <mapper namespace="com.zy.seata.order_service.dto.OrderDao">
     <resultMap id="BaseResultMap" type="com.zy.seata.order_service.domain.Order">
-        <id column="id" property="id" jdbcType="int"></id>
-        <result column="user_id" property="userId" jdbcType="int"></result>
-        <result column="product_id" property="productId" jdbcType="int"></result>
-        <result column="count" property="count" jdbcType="int"></result>
+        <id column="id" property="id" jdbcType="integer"></id>
+        <result column="user_id" property="userId" jdbcType="integer"></result>
+        <result column="product_id" property="productId" jdbcType="integer"></result>
+        <result column="count" property="count" jdbcType="integer"></result>
         <result column="price" property="price" jdbcType="decimal"></result>
-        <result column="status" property="status" jdbcType="int"></result>
+        <result column="status" property="status" jdbcType="integer"></result>
     </resultMap>
 
     <insert id="create">
